@@ -1,0 +1,36 @@
+Game - Design Document
+CIST 1600 - Homework 3
+Jessica Pusher
+
+#Design Questions
+- What are the rules to the game?
+- How are the player pieces visually identified?
+- What other elements are in the game?
+- What input from the user would you need to make the game go?
+
+The game has a minimum of two players with no maximum. 
+A score.csv file will store the player, turn, and position on the board. 
+The player will roll a pair of dice at the beginning of their turn. Before they roll they must guess if the dice total will be odd or even. 
+If the player's guess is correct, they move forward the number of spots rolled on the die. 
+The score.csv file is then updated for their position to be the previous position plus the number on the dice roll. 
+If the player's guess is incorrect, they skip their turn. 
+There are a total of 100 spaces on the board, the first player to reach or exceed 100 spaces wins. 
+If the game is left, score.csv file will retain the player, turn and position. 
+When the app is opened each time, the game will ask if the players from the score.csv file would like to continue their game. 
+The player can choose to continue with their last game or to start a new game. 
+With each new game, the user must input player names for who is playing. Inputing the names will write to the csv file so that each name entered starts with a turn of 0 and position of 0.
+For each turn, the Player name will display and the player can select dice to roll. 
+The player will be displayed on a numbered, grid. Each player will be a labeled dot. 
+The board will be a rainbow of colors. 
+Multiple pieces can reside in the same spot as each turn and position is stored in the csv relative to the individual player. 
+
+Chat GPT's summary of features: 
+- Minimum 2 players, no maximum.
+- score.csv stores player name, turn, and position
+- Players guess "Odd" or "Even" before rolling dice
+- Move only if guess is correct 
+- Win condition: first to reach 100+ 
+- Game can resume from score.csv 
+- Grid board with rainbow coloring
+- Players represented as labeled dots on the board 
+- UI for adding players, continuing game, and rolling dice
