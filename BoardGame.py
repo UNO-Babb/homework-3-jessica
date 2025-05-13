@@ -1,7 +1,8 @@
-#ChatGPT Game
+#ChatGPT
 #Logic is in this python file
 
-from flask import Flask, render_template, jsonify
+from flask import Flask, request, redirect, url_for, render_template_string
+#from flask import Flask, render_template, jsonify
 import csv
 import os
 import random 
